@@ -54,6 +54,19 @@ vector<int> printListFromTailToHead(ListNode* head) {
     return ans;
 }
 
+void printListFromTailToHeadv2(ListNode* head, vector<int> &ans)
+{
+    if (head != NULL)
+    {
+        if (head->next != NULL)
+        {
+            printListFromTailToHeadv2(head->next, ans);
+        }
+        ans.push_back(head->val);
+    }
+}
+
+
 int main()
 {
     ListNode n1, n2, n3, n4;
@@ -68,8 +81,9 @@ int main()
     ListNode *head = &n1;
 
     printList(head);
-
-    vector<int> ans = printListFromTailToHead(head);
+    vector<int> ans;
+    //ans = printListFromTailToHead(head);
+    printListFromTailToHeadv2(head, ans);
     printArray(ans);
 
 }
