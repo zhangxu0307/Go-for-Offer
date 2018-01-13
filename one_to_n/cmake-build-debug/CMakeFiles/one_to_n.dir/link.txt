@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2017.3.1\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\one_to_n.dir/objects.a
+"C:\Program Files (x86)\mingw-w64\i686-7.2.0-posix-dwarf-rt_v5-rev1\mingw32\bin\ar.exe" cr CMakeFiles\one_to_n.dir/objects.a @CMakeFiles\one_to_n.dir\objects1.rsp
+"C:\Program Files (x86)\mingw-w64\i686-7.2.0-posix-dwarf-rt_v5-rev1\mingw32\bin\g++.exe" -g   -Wl,--whole-archive CMakeFiles\one_to_n.dir/objects.a -Wl,--no-whole-archive  -o one_to_n.exe -Wl,--out-implib,libone_to_n.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\one_to_n.dir\linklibs.rsp
