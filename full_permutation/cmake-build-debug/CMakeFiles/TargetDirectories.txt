@@ -1,0 +1,3 @@
+E:/Go for offer/full_permutation/cmake-build-debug/CMakeFiles/full_permutation.dir
+E:/Go for offer/full_permutation/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Go for offer/full_permutation/cmake-build-debug/CMakeFiles/rebuild_cache.dir
