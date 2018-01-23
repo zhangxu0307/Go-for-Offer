@@ -1,0 +1,3 @@
+E:/Go for offer/add_without_add/cmake-build-debug/CMakeFiles/add_without_add.dir
+E:/Go for offer/add_without_add/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Go for offer/add_without_add/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+E:/Go for offer/tree_depth/cmake-build-debug/CMakeFiles/tree_depth.dir
+E:/Go for offer/tree_depth/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Go for offer/tree_depth/cmake-build-debug/CMakeFiles/rebuild_cache.dir
