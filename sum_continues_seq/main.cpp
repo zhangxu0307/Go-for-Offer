@@ -37,6 +37,8 @@ vector< vector<int> > FindContinuousSequence(int sum)
         big++; // 移动big试探
         currSum += big;
 
+
+
     }
 
     return ans;
