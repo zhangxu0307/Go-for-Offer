@@ -18,7 +18,7 @@ void PermutationCore(string str, int start, vector<string> &ans)
 
         swap(str[start],str[i]);
         PermutationCore(str, start+1, ans);
-        swap(str[i],str[start]); // 回溯
+        //swap(str[i],str[start]); // 回溯
 
 
     }
@@ -33,7 +33,7 @@ vector<string> Permutation(string str)
 }
 
 int main() {
-    string s = "aa";
+    string s = "abc";
     vector<string> ans = Permutation(s);
     for(int i = 0;i<ans.size();i++)
         cout<<ans[i]<<endl;

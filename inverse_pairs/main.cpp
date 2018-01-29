@@ -7,8 +7,9 @@ int merge(vector<int> &data, int start, int mid, int end)
 {
     vector<int> tmp;
     int i = start;
-    int j = mid+1;
+    int j = mid+1; // 右半部子数组开头是mid+1，因为下面右半部子数组不包含mid
     int cnt = 0;
+
     while(i <= mid && j <= end)
     {
         if(data[i] <= data[j])
@@ -17,12 +18,13 @@ int merge(vector<int> &data, int start, int mid, int end)
             i++;
         }
         else {
-            cnt += j-mid;
+            cnt += j-mid; // 逆序对，从j开始一直到第二个子数组的头部，都够成了逆序对
             tmp.push_back(data[j]);
             j++;
         }
     }
 
+    // 剩余的子数组merge到tmp
     while(i <= mid)
     {
         tmp.push_back(data[i]);
@@ -35,7 +37,7 @@ int merge(vector<int> &data, int start, int mid, int end)
         j++;
     }
 
-    for(i=0; i<tmp.size(); i++)
+    for(i=0; i<tmp.size(); i++) // 还需要将排序好的数组复制回原数组
         data[start+i] = tmp[i];
 
     return cnt;
@@ -45,13 +47,13 @@ int merge(vector<int> &data, int start, int mid, int end)
 int mergeSort(vector<int> &data, int start, int end)
 {
     int cnt = 0;
-    if(start < end)
+    if(start < end) // 控制条件是start和end
     {
         int mid = (start + end)/2;
 
-        cnt += mergeSort(data, start, mid); //左半部分 逆序对数量
+        cnt += mergeSort(data, start, mid); //左半部分 包含mid
 
-        cnt += mergeSort(data, mid+1, end); //右半部分
+        cnt += mergeSort(data, mid+1, end); //右半部分 不包含mid
 
         cnt += merge(data, start, mid, end); //合并两部分，并计算数量
 
